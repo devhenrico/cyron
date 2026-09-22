@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0f16" />
+    <meta
+      name="description"
+      content="Clientes, demandas e prazos em um só lugar. Conheça o Cyron, o CRM pensado para a rotina dos pequenos escritórios de contabilidade."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Cyron" />
+    <meta property="og:title" content="Cyron — Seu escritório, em sintonia." />
+    <meta
+      property="og:description"
+      content="Clientes, demandas e prazos em um só lugar. Uma experiência de CRM pensada para pequenos escritórios de contabilidade."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Cyron — Seu escritório, em sintonia." />
+    <meta
+      name="twitter:description"
+      content="Clientes, demandas e prazos em um só lugar. Conheça o Cyron."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Cyron",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "CRM para pequenos escritórios de contabilidade organizarem clientes, demandas e prazos em um só lugar."
+      }
+    </script>
+    <title>Cyron — Seu escritório, em sintonia.</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Cpath d='M43 18a19 19 0 1 0 0 28' fill='none' stroke='%235887ff' stroke-width='9'/%3E%3Ccircle cx='45' cy='32' r='5' fill='%23fff'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;450;500;550;600;650;700;750;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260922-4" />
+    <link rel="preload" as="image" href="assets/hero-atmosphere.webp" />
+    <script>
+      document.documentElement.classList.add("js");
+      window.cyronIntroStartedAt = performance.now();
+      window.cyronLoaderFailsafe = setTimeout(function () {
+        document.documentElement.classList.remove("loading");
+        document.querySelector(".loader")?.remove();
+      }, 8000);
+      document.documentElement.classList.add("loading");
+    </script>
+    <script defer src="assets/vendor/gsap.min.js"></script>
+    <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+    <script defer src="assets/vendor/lucide.min.js"></script>
+    <script defer src="app.js?v=20260922-4"></script>
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-center">
+        <span class="brand"
+          ><i data-lucide="orbit"></i><span>cyron.</span></span
+        >
+        <div class="loader-track"><span></span></div>
+        <span class="loader-number">00%</span>
+      </div>
+      <span class="loader-bottom">CONECTANDO O QUE IMPORTA.</span>
+    </div>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="custom-scrollbar" aria-hidden="true">
+      <span class="custom-scrollbar-thumb"></span>
+    </div>
+    <div class="announcement">
+      <span class="announcement-tag">EM DESENVOLVIMENTO</span
+      ><span>Um novo tempo para a sua contabilidade.</span
+      ><a href="#plataforma"
+        >Conheça o Cyron <i data-lucide="arrow-up-right"></i
+      ></a>
+    </div>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Cyron, início"
+          ><i data-lucide="orbit"></i
+          ><span>cyron<span class="brand-dot">.</span></span></a
+        >
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#plataforma">A plataforma</a><a href="#recursos">Recursos</a
+          ><a href="#como-funciona">Como funciona</a
+          ><a href="#duvidas">Dúvidas</a>
+        </nav>
+        <a
+          class="button button-small nav-cta"
+          href="#plataforma"
+          aria-label="Explorar demonstração"
+          ><span class="cta-label-full">Explorar demonstração</span
+          ><span class="cta-label-short" aria-hidden="true">Ver demo</span>
+          <i data-lucide="arrow-up-right"></i
+        ></a>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Navegação móvel"
+        hidden
+      >
+        <a href="#plataforma">A plataforma</a><a href="#recursos">Recursos</a
+        ><a href="#como-funciona">Como funciona</a
+        ><a href="#duvidas">Dúvidas</a>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-atmosphere" aria-hidden="true"></div>
+        <div class="hero-copy container">
+          <div class="eyebrow hero-enter">
+            <span class="status-dot" aria-hidden="true"></span> ORGANIZAÇÃO QUE
+            APROXIMA.
+          </div>
+          <h1 id="hero-title">
+            <span class="hero-line">Seu escritório,</span
+            ><span class="hero-line">em <em>sintonia.</em></span>
+          </h1>
+          <p class="hero-description hero-enter">
+            O CRM para pequenos escritórios de contabilidade.<br />
+            Clientes, demandas e prazos. Tudo no mesmo lugar.
+          </p>
+          <div class="hero-actions hero-enter">
+            <a class="button button-primary" href="#plataforma"
+              >Explorar demonstração <i data-lucide="arrow-up-right"></i></a
+            ><a class="button button-ghost hero-secondary" href="#como-funciona"
+              >Como funciona <i data-lucide="arrow-down"></i
+            ></a>
+          </div>
+          <p class="hero-note hero-enter">
+            Interativa. Sem cadastro. No seu ritmo.
+          </p>
+        </div>
+        <div class="product-stage container" id="plataforma">
+          <div class="product-caption">
+            <span
+              ><span class="status-dot"></span> SEU PRÓXIMO DIA, MAIS
+              CLARO.</span
+            ><span
+              id="platform-title"
+              >EXPLORE A PLATAFORMA <i data-lucide="corner-right-down"></i
+            ></span>
+          </div>
+          <div
+            class="dashboard"
+            role="region"
+            aria-labelledby="platform-title"
+          >
+            <aside class="dashboard-sidebar">
+              <a
+                class="brand app-brand"
+                href="#plataforma"
+                aria-label="Cyron demonstração"
+                ><i data-lucide="orbit"></i><span>cyron.</span></a
+              >
+              <div class="workspace">
+                <span class="workspace-avatar">AC</span
+                ><span
+                  >Almeida Contábil<small>Seu espaço de trabalho</small></span
+                ><i data-lucide="chevrons-up-down"></i>
+              </div>
+              <span class="sidebar-label">ESCRITÓRIO</span>
+              <div
+                class="dashboard-tabs"
+                role="tablist"
+                aria-label="Seções da demonstração"
+                aria-orientation="vertical"
+              >
+                <button
+                  id="tab-overview"
+                  class="app-tab active"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="demo-panel"
+                  data-view="overview"
+                >
+                  <i data-lucide="layout-dashboard"></i> Visão geral</button
+                ><button
+                  id="tab-clients"
+                  class="app-tab"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="demo-panel"
+                  tabindex="-1"
+                  data-view="clients"
+                >
+                  <i data-lucide="users-round"></i> Clientes
+                  <span data-count="24">24</span></button
+                ><button
+                  id="tab-tasks"
+                  class="app-tab"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="demo-panel"
+                  tabindex="-1"
+                  data-view="tasks"
+                >
+                  <i data-lucide="list-checks"></i> Demandas
+                  <span data-count="12">12</span>
+                </button>
+              </div>
+              <div class="sidebar-bottom">
+                <span class="avatar">MA</span
+                ><span>Mariana Almeida<small>Administradora</small></span
+                ><i data-lucide="chevron-down"></i>
+              </div>
+            </aside>
+            <div class="dashboard-main">
+              <div class="app-topbar">
+                <span
+                  >Meu escritório <i data-lucide="chevron-right"></i>
+                  <b id="breadcrumb">Visão geral</b></span
+                ><span class="demo-pill">DEMONSTRAÇÃO</span>
+              </div>
+              <div
+                id="demo-panel"
+                role="tabpanel"
+                aria-labelledby="tab-overview"
+                tabindex="0"
+              >
+                <div class="app-greeting">
+                  <div>
+                    <span class="app-date">SEGUNDA-FEIRA, 21 DE SETEMBRO</span>
+                    <h2>
+                      Bom dia, Mariana <span class="greeting-star">✳</span>
+                    </h2>
+                    <p>Um novo dia para fazer boas conexões.</p>
+                  </div>
+                  <span class="period"
+                    >Este mês <i data-lucide="chevron-down"></i
+                  ></span>
+                </div>
+                <div class="metric-row">
+                  <div class="metric">
+                    <span
+                      >Clientes ativos <i data-lucide="users-round"></i
+                    ></span>
+                    <div>
+                      <strong data-count="24">24</strong
+                      ><small class="positive"
+                        >+<span data-count="3">3</span> este mês</small
+                      >
+                    </div>
+                  </div>
+                  <div class="metric">
+                    <span
+                      >Demandas em andamento <i data-lucide="layers"></i
+                    ></span>
+                    <div>
+                      <strong data-count="12">12</strong
+                      ><small><span data-count="4">4</span> para hoje</small>
+                    </div>
+                  </div>
+                  <div class="metric">
+                    <span
+                      >Entregas no prazo <i data-lucide="circle-check"></i
+                    ></span>
+                    <div>
+                      <strong
+                        ><span data-count="98">98</span><span>%</span></strong
+                      ><small class="positive">Tudo em dia</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="app-bottom-grid">
+                  <div class="demand-list">
+                    <div class="panel-heading">
+                      <h3>O que precisa da sua atenção</h3>
+                      <span>HOJE</span>
+                    </div>
+                    <div class="demand-row">
+                      <span class="client-icon blue">VL</span>
+                      <div>
+                        <b>Vértice Logística</b
+                        ><small>Conferência de documentos fiscais</small>
+                      </div>
+                      <span class="pill amber">Em andamento</span
+                      ><span class="row-time">14:00</span>
+                    </div>
+                    <div class="demand-row">
+                      <span class="client-icon violet">SP</span>
+                      <div>
+                        <b>Studio Ponto</b
+                        ><small>Envio da folha de pagamento</small>
+                      </div>
+                      <span class="pill blue-pill">Em revisão</span
+                      ><span class="row-time">16:30</span>
+                    </div>
+                    <div class="demand-row">
+                      <span class="client-icon teal">MC</span>
+                      <div>
+                        <b>Mercado Central</b
+                        ><small>Apuração do Simples Nacional</small>
+                      </div>
+                      <span class="pill green">Concluído</span
+                      ><span class="row-time">09:45</span>
+                    </div>
+                  </div>
+                  <div class="week-panel">
+                    <div class="panel-heading">
+                      <h3>Sua semana</h3>
+                      <i data-lucide="chart-no-axes-column-increasing"></i>
+                    </div>
+                    <div class="week-total">
+                      <strong data-count="18">18</strong
+                      ><span>demandas concluídas</span>
+                    </div>
+                    <div
+                      class="chart"
+                      role="img"
+                      aria-label="Demandas concluídas: segunda 3, terça 5, quarta 4, quinta 2, sexta 4"
+                    >
+                      <div style="--bar: 45%"><i></i><span>S</span></div>
+                      <div style="--bar: 85%"><i></i><span>T</span></div>
+                      <div style="--bar: 65%"><i></i><span>Q</span></div>
+                      <div style="--bar: 35%"><i></i><span>Q</span></div>
+                      <div style="--bar: 65%"><i></i><span>S</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-footnote">
+            <span
+              ><i data-lucide="mouse-pointer-2"></i> Explore as abas e conheça a
+              experiência.</span
+            ><span>Ambiente de demonstração</span>
+          </div>
+        </div>
+      </section>
+      <div class="connection-strip">
+        <div class="container">
+          <span>UMA ROTINA MAIS CONECTADA</span>
+          <div><i data-lucide="users-round"></i> Clientes</div>
+          <i class="strip-plus" data-lucide="plus"></i>
+          <div><i data-lucide="list-checks"></i> Demandas</div>
+          <i class="strip-plus" data-lucide="plus"></i>
+          <div><i data-lucide="calendar-days"></i> Prazos</div>
+          <i class="strip-plus" data-lucide="plus"></i>
+          <div><i data-lucide="messages-square"></i> Relações</div>
+        </div>
+      </div>
+      <section
+        class="manifesto section container"
+        aria-labelledby="manifesto-title"
+      >
+        <div class="section-kicker reveal">
+          <span>01 / PARA QUEM É O CYRON</span>
+        </div>
+        <div class="manifesto-layout">
+          <h2 id="manifesto-title" class="manifesto-title reveal">
+            Seu trabalho é contábil.<br /><span>Sua relação é humana.</span>
+          </h2>
+          <div class="manifesto-list reveal">
+            <div class="manifesto-item">
+              <span class="manifesto-item-icon"
+                ><i data-lucide="heart-handshake"></i
+              ></span>
+              <span>Pequenos escritórios que crescem sem perder proximidade.</span>
+            </div>
+            <div class="manifesto-item">
+              <span class="manifesto-item-icon"
+                ><i data-lucide="scan-eye"></i
+              ></span>
+              <span>Uma rotina clara para equipes que fazem mais com menos.</span>
+            </div>
+            <div class="manifesto-item">
+              <span class="manifesto-item-icon"
+                ><i data-lucide="users-round"></i
+              ></span>
+              <span>Demandas, prazos e responsáveis na mesma visão.</span>
+            </div>
+            <div class="manifesto-item">
+              <span class="manifesto-item-icon"
+                ><i data-lucide="sparkles"></i
+              ></span>
+              <span>Histórico para atender melhor, não só mensagens soltas.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="resources section container"
+        id="recursos"
+        aria-labelledby="resources-title"
+      >
+        <div class="section-kicker reveal">
+          <span>02 / TUDO SE CONECTA</span><span>FEITO PARA A SUA ROTINA</span>
+        </div>
+        <div class="section-heading reveal">
+          <h2 id="resources-title">
+            Menos abas abertas.<br /><span>Mais caminhos livres.</span>
+          </h2>
+          <p>A visão do todo.<br />A atenção a cada detalhe.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-wide reveal">
+            <div class="feature-copy">
+              <span class="feature-icon"
+                ><i data-lucide="users-round"></i
+              ></span>
+              <h3>Cada cliente.<br />Uma história completa.</h3>
+              <p>
+                Encontre contatos, conversas e demandas na ficha de cada
+                empresa. Retome o atendimento de onde ele parou.
+              </p>
+              <span class="feature-label">RELACIONAMENTO QUE FAZ SENTIDO</span>
+            </div>
+            <div
+              class="client-profile"
+              aria-label="Exemplo de ficha de cliente"
+            >
+              <div class="profile-header">
+                <span class="profile-avatar">VL</span>
+                <div>
+                  <b>Vértice Logística</b
+                  ><span>Cliente desde janeiro de 2026</span>
+                </div>
+                <span class="pill green">Ativo</span>
+              </div>
+              <div class="profile-info">
+                <div><span>Responsável</span><b>Mariana Almeida</b></div>
+                <div><span>Regime tributário</span><b>Simples Nacional</b></div>
+              </div>
+              <div class="profile-timeline">
+                <div>
+                  <span class="timeline-dot"></span
+                  ><b>Um histórico. Todo o contexto.</b>
+                </div>
+                <div>
+                  <span class="timeline-dot"></span
+                  ><span>Documentos recebidos<small>Hoje, às 09:32</small></span
+                  ><i data-lucide="file-check-2"></i>
+                </div>
+                <div>
+                  <span class="timeline-dot"></span
+                  ><span
+                    >Reunião de alinhamento<small
+                      >18 de setembro, às 14:00</small
+                    ></span
+                  ><i data-lucide="messages-square"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card feature-outline reveal">
+            <span class="feature-icon"><i data-lucide="list-checks"></i></span>
+            <h3>O próximo passo.<br />Sempre à vista.</h3>
+            <p>
+              Distribua demandas, defina responsáveis e acompanhe o que falta
+              para concluir cada entrega.
+            </p>
+            <div
+              class="mini-tasks"
+              aria-label="Exemplo de acompanhamento de demandas"
+            >
+              <div>
+                <span class="mini-check checked"
+                  ><i data-lucide="check"></i></span
+                ><span>Receber documentos</span
+                ><span class="mini-avatar">MA</span>
+              </div>
+              <div>
+                <span class="mini-check"></span><span>Conferir lançamentos</span
+                ><span class="mini-avatar second">LC</span>
+              </div>
+              <div>
+                <span class="mini-check"></span
+                ><span>Enviar relatório ao cliente</span
+                ><span class="mini-avatar">MA</span>
+              </div>
+            </div>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon"
+              ><i data-lucide="calendar-clock"></i
+            ></span>
+            <h3>Prazos em dia.<br />Mente tranquila.</h3>
+            <p>
+              Saiba o que vem pela frente. Enxergue prioridades e distribua a
+              rotina da equipe com mais clareza.
+            </p>
+            <div class="mini-calendar" aria-label="Exemplo de agenda semanal">
+              <div class="calendar-title">SETEMBRO <span>2026</span></div>
+              <div class="calendar-week">
+                <span>SEG<b class="selected-day">21</b></span
+                ><span>TER<b>22</b></span
+                ><span>QUA<b>23</b></span
+                ><span>QUI<b>24</b></span
+                ><span>SEX<b>25</b></span>
+              </div>
+              <div class="calendar-event">
+                <span></span>
+                <div>Fechamento da folha<small>Hoje · 16:30</small></div>
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="explore-section container"
+        aria-labelledby="explore-title"
+      >
+        <div class="section-kicker reveal">
+          <span id="explore-title">EXPERIMENTE COM UM CLIQUE</span
+          ><span>ABRA UMA VISÃO DA DEMONSTRAÇÃO</span>
+        </div>
+        <div class="orchid-cards">
+          <a
+            class="orchid-card reveal"
+            href="#plataforma"
+            data-demo-target="clients"
+          >
+            <div class="orchid-card-top">
+              <span>01 / RELACIONAMENTO</span
+              ><span class="card-arrow"
+                ><i data-lucide="arrow-up-right"></i
+              ></span>
+            </div>
+            <i class="orchid-card-icon" data-lucide="users-round"></i>
+            <div class="orchid-card-copy">
+              <h3>Conheça seus clientes.</h3>
+              <p>Abra a carteira de empresas.</p>
+            </div>
+          </a>
+          <a
+            class="orchid-card orchid-card-outline reveal"
+            href="#plataforma"
+            data-demo-target="tasks"
+          >
+            <div class="orchid-card-top">
+              <span>02 / ORGANIZAÇÃO</span
+              ><span class="card-arrow"
+                ><i data-lucide="arrow-up-right"></i
+              ></span>
+            </div>
+            <i class="orchid-card-icon" data-lucide="layers"></i>
+            <div class="orchid-card-copy">
+              <h3>Acompanhe as demandas.</h3>
+              <p>Veja quem faz o quê.</p>
+            </div>
+          </a>
+          <a
+            class="orchid-card reveal"
+            href="#plataforma"
+            data-demo-target="overview"
+          >
+            <div class="orchid-card-top">
+              <span>03 / CLAREZA</span
+              ><span class="card-arrow"
+                ><i data-lucide="arrow-up-right"></i
+              ></span>
+            </div>
+            <i class="orchid-card-icon" data-lucide="scan-eye"></i>
+            <div class="orchid-card-copy">
+              <h3>Veja o escritório inteiro.</h3>
+              <p>Explore o resumo da rotina.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section
+        class="numbers-section section container"
+        id="numeros"
+        aria-labelledby="numbers-title"
+      >
+        <div class="section-kicker reveal">
+          <span>ESPAÇO PARA O QUE IMPORTA</span>
+          <span class="numbers-badge">CENÁRIO ILUSTRATIVO</span>
+        </div>
+        <div class="section-heading reveal">
+          <h2 id="numbers-title">
+            Clareza que você vê.<br /><span>Detalhe por detalhe.</span>
+          </h2>
+          <p>
+            Um escritório de exemplo.<br />Uma nova perspectiva sobre a rotina.
+          </p>
+        </div>
+        <div class="numbers-grid">
+          <article class="number-card number-card-tall reveal">
+            <h3>Clientes conectados à mesma visão.</h3>
+            <p class="number-value">
+              <span data-count="24">24</span
+              ><span class="number-unit">clientes</span>
+            </p>
+            <p class="number-description">
+              Cada empresa com seu contexto. Uma carteira organizada para
+              dedicar mais atenção a cada relação.
+            </p>
+          </article>
+          <article class="number-card reveal">
+            <h3>Demandas em movimento.</h3>
+            <p class="number-value">
+              <span data-count="12">12</span
+              ><span class="number-unit">demandas</span>
+            </p>
+            <p class="number-description">
+              Cada entrega com um responsável e um próximo passo.
+            </p>
+          </article>
+          <article class="number-card number-card-outline reveal">
+            <h3>Entregas dentro do prazo.</h3>
+            <p class="number-value">
+              <span data-count="98">98</span
+              ><span class="number-suffix">%</span>
+            </p>
+            <p class="number-description">
+              Um indicador para reconhecer o que avança e o que precisa de
+              atenção.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="clarity section" aria-labelledby="clarity-title">
+        <div class="container clarity-grid">
+          <div class="clarity-copy reveal">
+            <div class="section-kicker">
+              <span>O MESMO ESCRITÓRIO. OUTRA ROTINA.</span>
+            </div>
+            <h2 id="clarity-title">
+              Da informação solta<br />à <span>visão completa.</span>
+            </h2>
+            <p>
+              Troque a procura pelo acompanhamento.<br />Quando tudo está
+              conectado, o próximo passo fica mais simples.
+            </p>
+            <div
+              class="compare-switch"
+              role="group"
+              aria-label="Comparar organização da rotina"
+            >
+              <button data-compare="before" aria-pressed="false">
+                Sem o Cyron</button
+              ><button class="active" data-compare="after" aria-pressed="true">
+                Com o Cyron <i data-lucide="sparkles"></i>
+              </button>
+            </div>
+          </div>
+          <div class="compare-stage reveal" aria-live="polite">
+            <div class="compare-panel" id="compare-after">
+              <div class="flow-heading">
+                <i data-lucide="orbit"></i><span>Tudo no seu lugar.</span
+                ><small>CYRON</small>
+              </div>
+              <div class="flow-row">
+                <span class="flow-icon"><i data-lucide="users-round"></i></span>
+                <div>
+                  <b>Clientes com contexto</b
+                  ><span>Informações e histórico reunidos.</span>
+                </div>
+                <i data-lucide="check"></i>
+              </div>
+              <div class="flow-row">
+                <span class="flow-icon"><i data-lucide="list-checks"></i></span>
+                <div>
+                  <b>Equipe em sintonia</b
+                  ><span>Cada demanda, um responsável.</span>
+                </div>
+                <i data-lucide="check"></i>
+              </div>
+              <div class="flow-row">
+                <span class="flow-icon"
+                  ><i data-lucide="calendar-check"></i
+                ></span>
+                <div>
+                  <b>Prioridades claras</b
+                  ><span>Uma visão do que precisa acontecer.</span>
+                </div>
+                <i data-lucide="check"></i>
+              </div>
+              <div class="flow-footer">
+                <span class="status-dot"></span> MAIS TEMPO PARA CUIDAR DAS
+                RELAÇÕES.
+              </div>
+            </div>
+            <div class="compare-panel before-panel" id="compare-before" hidden>
+              <div class="flow-heading">
+                <i data-lucide="layers"></i
+                ><span>Onde ficou aquela informação?</span>
+              </div>
+              <div class="flow-row">
+                <span class="flow-icon"><i data-lucide="sheet"></i></span>
+                <div>
+                  <b>Uma planilha para cada coisa</b
+                  ><span>Qual delas está atualizada?</span>
+                </div>
+                <i data-lucide="circle-help"></i>
+              </div>
+              <div class="flow-row">
+                <span class="flow-icon"
+                  ><i data-lucide="messages-square"></i
+                ></span>
+                <div>
+                  <b>Mensagens espalhadas</b
+                  ><span>Quem ficou de responder o cliente?</span>
+                </div>
+                <i data-lucide="circle-help"></i>
+              </div>
+              <div class="flow-row">
+                <span class="flow-icon"><i data-lucide="alarm-clock"></i></span>
+                <div>
+                  <b>Prazos na memória</b><span>A entrega era para hoje?</span>
+                </div>
+                <i data-lucide="circle-help"></i>
+              </div>
+              <div class="flow-footer">
+                MAIS TEMPO PROCURANDO. MENOS TEMPO RESOLVENDO.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="how section container"
+        id="como-funciona"
+        aria-labelledby="how-title"
+      >
+        <div class="section-kicker reveal">
+          <span>03 / SIMPLES DESDE O INÍCIO</span
+          ><i data-lucide="move-up-right"></i>
+        </div>
+        <div class="section-heading reveal">
+          <h2 id="how-title">
+            Uma nova rotina.<br /><span>Sem complicar a sua.</span>
+          </h2>
+          <p>
+            Uma experiência pensada para quem<br />já tem muita coisa para
+            resolver.
+          </p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-number">01</span>
+            <div class="step-line"></div>
+            <h3>Reúna seus clientes.</h3>
+            <p>
+              Concentre as informações de cada empresa e tenha o contexto
+              necessário para atender melhor.
+            </p>
+          </article>
+          <article class="step reveal">
+            <span class="step-number">02</span>
+            <div class="step-line"></div>
+            <h3>Organize o trabalho.</h3>
+            <p>
+              Transforme solicitações em demandas com responsáveis, prioridades
+              e prazos definidos.
+            </p>
+          </article>
+          <article class="step reveal">
+            <span class="step-number">03</span>
+            <div class="step-line"></div>
+            <h3>Acompanhe com clareza.</h3>
+            <p>
+              Veja o andamento das entregas e dedique sua atenção ao que
+              realmente precisa de você.
+            </p>
+          </article>
+        </div>
+        <a class="text-link reveal" href="#plataforma"
+          >Explore essa experiência na demonstração
+          <i data-lucide="arrow-up-right"></i
+        ></a>
+      </section>
+      <section
+        class="faq section container"
+        id="duvidas"
+        aria-labelledby="faq-title"
+      >
+        <div class="faq-intro reveal">
+          <div class="section-kicker"><span>04 / SEM PONTAS SOLTAS</span></div>
+          <h2 id="faq-title">Vamos deixar<br />tudo claro.</h2>
+          <p>Um pouco mais sobre o Cyron<br />e o que estamos construindo.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>
+              Para quem o Cyron está sendo criado?<span
+                ><i data-lucide="plus"></i
+              ></span>
+            </summary>
+            <p>
+              Para pequenos escritórios de contabilidade que querem organizar o
+              relacionamento com seus clientes e acompanhar as demandas da
+              equipe em um só lugar, com uma experiência simples de usar.
+            </p>
+          </details>
+          <details>
+            <summary>
+              O Cyron substitui meu sistema contábil?<span
+                ><i data-lucide="plus"></i
+              ></span>
+            </summary>
+            <p>
+              A proposta do Cyron é cuidar da gestão do relacionamento e da
+              rotina do escritório. A escrituração, os cálculos fiscais e as
+              obrigações legais continuam nos sistemas contábeis utilizados pela
+              sua equipe.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Já posso usar a plataforma no meu escritório?<span
+                ><i data-lucide="plus"></i
+              ></span>
+            </summary>
+            <p>
+              O Cyron está em desenvolvimento como projeto integrador de
+              faculdade. Nesta página, você pode explorar uma demonstração
+              interativa com dados fictícios. O acesso à plataforma e as
+              condições de lançamento ainda serão definidos.
+            </p>
+          </details>
+          <details>
+            <summary>
+              O que posso explorar nesta demonstração?<span
+                ><i data-lucide="plus"></i
+              ></span>
+            </summary>
+            <p>
+              Alterne entre Visão geral, Clientes e Demandas na prévia da
+              plataforma. Você pode conhecer exemplos da organização de clientes
+              e entregas. As informações são ilustrativas e as alterações da
+              demonstração não são salvas.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="closing container reveal" aria-labelledby="closing-title">
+        <div class="closing-art" aria-hidden="true"></div>
+        <div class="eyebrow">
+          <span class="tiny-cross">+</span> O PRÓXIMO CAPÍTULO DO SEU ESCRITÓRIO
+        </div>
+        <h2 id="closing-title">
+          Sua próxima rotina<br /><span>começa com clareza.</span>
+        </h2>
+        <p>Explore o Cyron e imagine o que muda no seu escritório.</p>
+        <a class="button button-primary" href="#plataforma"
+          >Explorar demonstração <i data-lucide="arrow-up-right"></i></a
+        ><span class="closing-note">Sem cadastro. Direto à experiência.</span>
+      </section>
+    </main>
+    <div class="footer-space">
+      <footer class="floating-footer container" id="sobre">
+        <div class="footer-main">
+          <div class="footer-identity">
+            <a class="brand" href="#inicio" aria-label="Cyron, voltar ao início"
+              ><i data-lucide="orbit"></i><span>cyron.</span></a
+            >
+            <p>Clareza para o próximo passo.<br />Espaço para fazer melhor.</p>
+            <span class="footer-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="footer-status-copy"
+                >UM NOVO TEMPO ESTÁ CHEGANDO</span
+              >
+            </span>
+          </div>
+          <nav class="footer-column" aria-label="Plataforma no rodapé">
+            <h2>Explore o Cyron</h2>
+            <a href="#plataforma">A plataforma</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#duvidas">Dúvidas frequentes</a>
+          </nav>
+          <div class="footer-column footer-about">
+            <h2>Acompanhe o Cyron.</h2>
+            <p>
+              Um projeto em desenvolvimento.<br />Uma rotina melhor em
+              construção.
+            </p>
+            <a class="footer-email" href="mailto:cyroncrm@gmail.com"
+              >cyroncrm@gmail.com <i data-lucide="arrow-up-right"></i
+            ></a>
+            <div class="footer-socials">
+              <a
+                href="https://github.com/devhenrico/cyron"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Repositório do Cyron no GitHub (abre em nova aba)"
+                ><i data-lucide="github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir Instagram (abre em nova aba)"
+                ><i data-lucide="instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <small>© 2026 Cyron. Cada relação importa.</small
+          ><a class="footer-top-link" href="#inicio"
+            >De volta ao início
+            <span class="back-top"><i data-lucide="arrow-up"></i></span
+          ></a>
+        </div>
+      </footer>
+      <span class="footer-signature" aria-hidden="true"
+        >MAIS CONEXÃO. NOVAS POSSIBILIDADES.</span
+      >
+    </div>
+    <div class="cyron-cursor" aria-hidden="true">
+      <span class="cursor-orbit"></span><span class="cursor-core"></span>
+    </div>
+  </body>
+</html>
