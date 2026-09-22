@@ -190,11 +190,34 @@ document.querySelectorAll("[data-compare]").forEach((button) =>
       );
   }),
 );
-document
-  .querySelectorAll(".faq-list details")
-  .forEach((details) =>
-    details.addEventListener("toggle", () => window.ScrollTrigger?.refresh()),
-  );
+const faqDetails = [...document.querySelectorAll(".faq-list details")];
+faqDetails.forEach((details) => {
+  const answer = details.querySelector("p");
+  if (!answer) return;
+
+  answer.addEventListener("transitionend", (event) => {
+    if (event.propertyName === "max-height" && details.open)
+      answer.style.maxHeight = "none";
+  });
+
+  details.addEventListener("toggle", () => {
+    if (details.open) {
+      faqDetails.forEach((other) => {
+        if (other !== details && other.open) other.removeAttribute("open");
+      });
+      answer.style.maxHeight = "0px";
+      requestAnimationFrame(() => {
+        answer.style.maxHeight = `${answer.scrollHeight + 26}px`;
+      });
+    } else {
+      answer.style.maxHeight = `${answer.scrollHeight + 26}px`;
+      requestAnimationFrame(() => {
+        answer.style.maxHeight = "0px";
+      });
+    }
+    window.ScrollTrigger?.refresh();
+  });
+});
 
 // Keep progress moving continuously; resource readiness sets the remaining
 // duration instead of stopping at an artificial 90% checkpoint.
@@ -284,7 +307,9 @@ function startIntro() {
           opacity: 0,
           filter: "blur(3px)",
           duration: 0.9,
-          delay: element.matches(".orchid-card,.number-card,.step")
+          delay: element.matches(
+            ".orchid-card,.number-card,.step,.feature-card,.manifesto-item",
+          )
             ? [...element.parentElement.children].indexOf(element) * 0.07
             : 0,
           ease: "power3.out",

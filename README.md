@@ -20,12 +20,18 @@ Depois, acesse `http://127.0.0.1:4173`.
 
 Não é necessário instalar dependências ou executar um processo de build. O servidor local é recomendado porque permite carregar corretamente os módulos, imagens e arquivos servidos pela página.
 
+Para alterar os estilos, edite `styles/styles.scss` e gere o CSS servido pela página:
+
+```powershell
+npx --yes sass styles/styles.scss styles/styles.css --no-source-map
+```
+
 ## 🧪 Verificação
 
 Antes de publicar, valide a sintaxe do JavaScript:
 
 ```powershell
-node --check app.js
+node --check scripts/app.js
 ```
 
 Também é possível conferir a página diretamente no navegador em diferentes larguras, especialmente em 320px, 375px, 768px e desktop.
@@ -35,8 +41,11 @@ Também é possível conferir a página diretamente no navegador em diferentes l
 ```text
 cyron/
 ├── index.html
-├── styles.css
-├── app.js
+├── styles/
+│   ├── styles.scss
+│   └── styles.css
+├── scripts/
+│   └── app.js
 ├── sitemap.xml
 ├── assets/
 │   ├── hero-atmosphere.webp
@@ -47,8 +56,9 @@ cyron/
 ### 📌 Arquivos principais
 
 - `index.html`: estrutura semântica, conteúdo e demonstrações da landing page.
-- `styles.css`: tokens visuais, glassmorphism, layout, responsividade, estados de foco e scrollbar customizado.
-- `app.js`: carregamento inicial, animações, ScrollTrigger, contadores, menu móvel, abas e cursor orbital.
+- `styles/styles.scss`: fonte dos estilos, com variáveis, aninhamento e seletores `&`.
+- `styles/styles.css`: saída compilada do SCSS, carregada pela página no navegador.
+- `scripts/app.js`: carregamento inicial, animações, ScrollTrigger, contadores, menu móvel, abas e cursor orbital.
 - `assets/hero-atmosphere.webp`: atmosfera visual do hero.
 - `assets/vendor/`: GSAP, ScrollTrigger e Lucide servidos localmente.
 - `sitemap.xml`: sitemap da página pública do projeto.

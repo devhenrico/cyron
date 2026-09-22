@@ -16,11 +16,20 @@
       property="og:description"
       content="Clientes, demandas e prazos em um só lugar. Uma experiência de CRM pensada para pequenos escritórios de contabilidade."
     />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/devhenrico/cyron/main/assets/hero-atmosphere.webp"
+    />
+    <meta property="og:image:alt" content="Atmosfera visual do Cyron" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Cyron — Seu escritório, em sintonia." />
     <meta
       name="twitter:description"
       content="Clientes, demandas e prazos em um só lugar. Conheça o Cyron."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/devhenrico/cyron/main/assets/hero-atmosphere.webp"
     />
     <script type="application/ld+json">
       {
@@ -29,7 +38,8 @@
         "name": "Cyron",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "description": "CRM para pequenos escritórios de contabilidade organizarem clientes, demandas e prazos em um só lugar."
+          "description": "CRM para pequenos escritórios de contabilidade organizarem clientes, demandas e prazos em um só lugar.",
+          "image": "https://raw.githubusercontent.com/devhenrico/cyron/main/assets/hero-atmosphere.webp"
       }
     </script>
     <title>Cyron — Seu escritório, em sintonia.</title>
@@ -44,7 +54,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;450;500;550;600;650;700;750;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260922-4" />
+    <link rel="stylesheet" href="styles/styles.css?v=20260922-7" />
     <link rel="preload" as="image" href="assets/hero-atmosphere.webp" />
     <script>
       document.documentElement.classList.add("js");
@@ -58,7 +68,7 @@
     <script defer src="assets/vendor/gsap.min.js"></script>
     <script defer src="assets/vendor/ScrollTrigger.min.js"></script>
     <script defer src="assets/vendor/lucide.min.js"></script>
-    <script defer src="app.js?v=20260922-4"></script>
+    <script defer src="scripts/app.js?v=20260922-5"></script>
   </head>
   <body>
     <div class="loader" aria-hidden="true">
@@ -119,7 +129,10 @@
       >
         <a href="#plataforma">A plataforma</a><a href="#recursos">Recursos</a
         ><a href="#como-funciona">Como funciona</a
-        ><a href="#duvidas">Dúvidas</a>
+        ><a href="#duvidas">Dúvidas</a
+        ><a class="button button-primary mobile-demo-link" href="#plataforma"
+          >Explorar demonstração <i data-lucide="arrow-up-right"></i
+        ></a>
       </nav>
     </header>
     <main id="conteudo">
@@ -375,25 +388,25 @@
               <span class="manifesto-item-icon"
                 ><i data-lucide="heart-handshake"></i
               ></span>
-              <span>Pequenos escritórios que crescem sem perder proximidade.</span>
+              <span>Crescer sem perder proximidade.</span>
             </div>
             <div class="manifesto-item">
               <span class="manifesto-item-icon"
                 ><i data-lucide="scan-eye"></i
               ></span>
-              <span>Uma rotina clara para equipes que fazem mais com menos.</span>
+              <span>Uma rotina clara para fazer mais.</span>
             </div>
             <div class="manifesto-item">
               <span class="manifesto-item-icon"
                 ><i data-lucide="users-round"></i
               ></span>
-              <span>Demandas, prazos e responsáveis na mesma visão.</span>
+              <span>Demandas, prazos e responsáveis.</span>
             </div>
             <div class="manifesto-item">
               <span class="manifesto-item-icon"
                 ><i data-lucide="sparkles"></i
               ></span>
-              <span>Histórico para atender melhor, não só mensagens soltas.</span>
+              <span>Histórico para atender melhor.</span>
             </div>
           </div>
         </div>
